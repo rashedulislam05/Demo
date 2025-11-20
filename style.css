@@ -1,0 +1,110 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(130deg, #6575d8, #7366f1, #5678d3);
+    color:white;
+}
+
+/* -------------------------------- */
+/* HEADER */
+/* -------------------------------- */
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+header.sticky{
+    background: rgba(71, 112, 254, 0.85);
+    padding: 10px 0;
+}
+
+header .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    margin: 0 15px;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 10px 25px;
+    border-radius: 40px;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.3);
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* -------------------------------- */
+/* HERO SECTION */
+/* -------------------------------- */
+
+.hero{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 80px 0;
+}
+
+.hero-content{
+    max-width: 450px;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.sub-text{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-img{
+    position: relative;
+}
+
+.hero-img img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Floating icons */
+.icon{
+    position: absolute;
+    background: #0b1a61;
+    color:white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.icon-wp{ top: 10%; left: -40px; }
+.icon-el{ top: 10%; right: -40px; }
+.icon-shopify{ bottom: 10%; left: -40px; }
+.icon-woo{ bottom: 10%; right: -40px; }
